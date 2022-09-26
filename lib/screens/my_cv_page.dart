@@ -27,16 +27,6 @@ class MyCVPage extends StatelessWidget {
               style: kRegularTextStyle,
             ),
             Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.blueAccent,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.blueGrey,
-                      offset: Offset(0.0, 1.0),
-                      blurRadius: 10,
-                    ),
-                  ]),
               margin: EdgeInsets.all(8),
               padding: EdgeInsets.symmetric(vertical: 4, horizontal: 18),
               child: Row(
@@ -113,7 +103,11 @@ class MyCVPage extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              "Beginner",
+                              "African Leadership X",
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              "Software Engineer",
                               textAlign: TextAlign.center,
                             ),
                           ],
