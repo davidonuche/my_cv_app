@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import '../constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyCVPage extends StatelessWidget {
   const MyCVPage({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class MyCVPage extends StatelessWidget {
               child: Card(
                 margin: EdgeInsets.all(8),
                 child: ListTile(
-                  leading: Icon(Icons.call, color: Colors.black, size: 30),
+                  leading: Icon(Icons.call, color: Colors.blue, size: 30),
                   title: Center(
                     child: 
                     Text("+234 813 917 5123", style: kCardElementTextStyle)),
@@ -44,7 +45,7 @@ class MyCVPage extends StatelessWidget {
               child: Card(
                 child: ListTile(
                     leading:
-                        Icon(Icons.email, color: Colors.black, size: 30),
+                        Icon(Icons.email, color: Colors.green, size: 30),
                     title: Center(
                       child: Text(
                         "onuchedavid34@gmail.com",
@@ -56,15 +57,15 @@ class MyCVPage extends StatelessWidget {
                 ),
               ),
                     SizedBox(height: 15),
-                    /*Padding(
+                    Padding(
               padding: EdgeInsets.symmetric(horizontal: 25),
               child: Card(
                 child: ListTile(
                     leading:
-                        Icon(Icons.github, color: Colors.black, size: 30),
+                    Icon(Icons.hub, color: Colors.red, size: 30),
                     title: Center(
                       child: Text(
-                        "Davidbeebest",
+                        "github: Davidbeebest",
                         style: kCardElementTextStyle,
                       ),
                     ),
@@ -72,7 +73,7 @@ class MyCVPage extends StatelessWidget {
                   ),
                 ),
               ),
-                    SizedBox(height: 15),*/
+                    SizedBox(height: 15),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -94,6 +95,12 @@ class MyCVPage extends StatelessWidget {
                           Text("Political Science",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
+                              Text("African Leadership X",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                              Text("Software Engineering",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
                         ],
                       ),
                     ),
@@ -109,7 +116,7 @@ class MyCVPage extends StatelessWidget {
                               Text("Asst Flutter Lead @GDSC OUI",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
-                          Text("Dart, Shell, C",
+                          Text("Dart, Shell, C, Python, JS",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
                         ],
