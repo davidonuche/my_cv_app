@@ -42,6 +42,7 @@ class MyCVPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed:(){},
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -73,19 +74,23 @@ class MyCVPage extends StatelessWidget {
                             Text(
                               "Education",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             SizedBox(height: 3),
                             Text(
                               "Student",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             Text(
                               "Oduduwa University",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             Text(
                               "Political Science",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                           ],
                         ),
@@ -96,19 +101,23 @@ class MyCVPage extends StatelessWidget {
                             Text(
                               "Work Experience",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             SizedBox(height: 3),
                             Text(
                               "Flutter Developer",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             Text(
                               "African Leadership X",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                             Text(
                               "Software Engineer",
                               textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black)
                             ),
                           ],
                         ),
