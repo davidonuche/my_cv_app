@@ -51,6 +51,7 @@ class MyCVPage extends StatelessWidget {
                   //   "+234 813 917 5123",
                   //   style: kRegularTextStyle,
                   // ),
+                  
                   Text(
                     "onuchedavid34@gmail.com",
                     style: kRegularTextStyle,
