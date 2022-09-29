@@ -7,128 +7,96 @@ class MyCVPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
+      body: SafeArea(
+        child: Center(
+          child: Column(
           children: [
-            //avatar Image
+            //Avatar Image
             SizedBox(height: 20),
             CircleAvatar(
               radius: 90,
-              // ignore: todo
-              // TODO:- Provide path for asset image,
               foregroundImage: AssetImage("assets/picture.jpeg"),
             ),
+            SizedBox(height: 10),
             Text(
               "David Onuche",
               style: kTitleTextStyle,
             ),
             Text(
-              "Software Developer",
+              "Flutter Developer",
               style: kRegularTextStyle,
             ),
-            Container(
-              margin: EdgeInsets.all(8),
-              padding: EdgeInsets.symmetric(vertical: 4, horizontal: 18),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.call),
-                  Text(
-                    "+234 813 917 5123",
-                    style: kRegularTextStyle,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
+              child: Card(
+                margin: EdgeInsets.all(8),
+                child: ListTile(
+                  leading: Icon(Icons.call, color: Colors.black, size: 30),
+                  title: Center(
+                    child: 
+                    Text("+234 813 917 5123", style: kCardElementTextStyle)),
+                    trailing: SizedBox(),
                   ),
-                ],
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed:(){},
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  // Icon(Icons.call),
-                  // Text(
-                  //   "+234 813 917 5123",
-                  //   style: kRegularTextStyle,
-                  // ),
-                  
-                  Text(
-                    "onuchedavid34@gmail.com",
-                    style: kRegularTextStyle,
-                  ),
-                  Text(
-                    "@David72102212",
-                    style: kRegularTextStyle,
-                  ),
-                  Text(
-                    "Onuche ojimaojo david",
-                    style: kRegularTextStyle,
-                  ),
-                  SizedBox(height: 15),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text(
-                              "Education",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            SizedBox(height: 3),
-                            Text(
-                              "Student",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            Text(
-                              "Oduduwa University",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            Text(
-                              "Political Science",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                          ],
-                        ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
+              child: Card(
+                child: ListTile(
+                    leading:
+                        Icon(Icons.email, color: Colors.black, size: 30),
+                    title: Center(
+                      child: Text(
+                        "onuchedavid34@gmail.com",
+                        style: kCardElementTextStyle,
                       ),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text(
-                              "Work Experience",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            SizedBox(height: 3),
-                            Text(
-                              "Flutter Developer",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            Text(
-                              "African Leadership X",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                            Text(
-                              "Software Engineer",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black)
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  )
-                ],
+                    ),
+                    trailing: SizedBox(),
+                  ),
+                ),
               ),
-            ),
-          ],
+                    SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Education",
+                              textAlign: TextAlign.center, style: kBoldTextStyle),
+                          SizedBox(height: 3),
+                          Text("IIR, Kyiv",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                          Text("Kozminski University, Warsaw",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                        ],
+                      ),
+                    ),
+                        Expanded(
+                      child: Column(
+                        children: [
+                          Text("Work Experience",
+                              textAlign: TextAlign.center, style: kBoldTextStyle),
+                          SizedBox(height: 3),
+                          Text("English Teacher",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                          Text("Flutter Developer",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
