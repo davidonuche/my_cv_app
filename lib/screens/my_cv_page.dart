@@ -23,7 +23,7 @@ class MyCVPage extends StatelessWidget {
               style: kTitleTextStyle,
             ),
             Text(
-              "Flutter Developer",
+              "Software Engineer",
               style: kRegularTextStyle,
             ),
             Padding(
@@ -56,6 +56,23 @@ class MyCVPage extends StatelessWidget {
                 ),
               ),
                     SizedBox(height: 15),
+                    /*Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
+              child: Card(
+                child: ListTile(
+                    leading:
+                        Icon(Icons.github, color: Colors.black, size: 30),
+                    title: Center(
+                      child: Text(
+                        "Davidbeebest",
+                        style: kCardElementTextStyle,
+                      ),
+                    ),
+                    trailing: SizedBox(),
+                  ),
+                ),
+              ),
+                    SizedBox(height: 15),*/
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -68,10 +85,13 @@ class MyCVPage extends StatelessWidget {
                           Text("Education",
                               textAlign: TextAlign.center, style: kBoldTextStyle),
                           SizedBox(height: 3),
-                          Text("IIR, Kyiv",
+                          Text("Student",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
-                          Text("Kozminski University, Warsaw",
+                          Text("Oduduwa University",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                          Text("Political Science",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
                         ],
@@ -83,10 +103,13 @@ class MyCVPage extends StatelessWidget {
                           Text("Work Experience",
                               textAlign: TextAlign.center, style: kBoldTextStyle),
                           SizedBox(height: 3),
-                          Text("English Teacher",
+                          Text("Flutter Developer",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
-                          Text("Flutter Developer",
+                              Text("Asst Flutter Lead @GDSC OUI",
+                              textAlign: TextAlign.center,
+                              style: kRegularSmallTextStyle),
+                          Text("Dart, Shell, C",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
                         ],
