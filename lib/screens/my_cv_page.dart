@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 import '../constants.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class MyCVPage extends StatelessWidget {
   const MyCVPage({Key? key}) : super(key: key);
