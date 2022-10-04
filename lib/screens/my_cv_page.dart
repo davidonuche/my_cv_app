@@ -115,7 +115,7 @@ class MyCVPage extends StatelessWidget {
                               Text("Asst Flutter Lead @GDSC OUI",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
-                          Text("Dart, Shell, C, Python, JS",
+                          Text("Dart, Shell, C, Py, JS",
                               textAlign: TextAlign.center,
                               style: kRegularSmallTextStyle),
                         ],
