@@ -28,39 +28,43 @@ class MyCVPage extends StatelessWidget {
                 style: kRegularTextStyle,
               ),
               Padding(
-               padding: EdgeInsets.symmetric(horizontal: 25),
-                  child: Card(
-                    child: ListTile(
-                      leading: Icon(Icons.call, color: Colors.blue, size: 30),
-                      title: Center(
-                        child: Text(
-                          "+234 813 917 5123",
-                          style: kCardElementTextStyle,
-                        ),
-                      ),
-                      trailing: SizedBox(),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 3),
-              Padding(
                 padding: EdgeInsets.symmetric(horizontal: 25),
-                  child: Card(
-                    child: ListTile(
-                      leading: Icon(Icons.email, color: Colors.green, size: 30),
-                      title: Center(
-                        child: Text(
-                          "onuchedavid34@gmail.com",
-                          style: kCardElementTextStyle,
-                        ),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.call, color: Colors.blue, size: 30),
+                    title: Center(
+                      child: Text(
+                        "+234 813 917 5123",
+                        style: kCardElementTextStyle,
                       ),
-                      trailing: SizedBox(),
                     ),
+                    trailing: SizedBox(),
                   ),
                 ),
+              ),
               SizedBox(height: 3),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 25),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.email, color: Colors.green, size: 30),
+                    title: Center(
+                      child: Text(
+                        "onuchedavid34@gmail.com",
+                        style: kCardElementTextStyle,
+                      ),
+                    ),
+                    trailing: SizedBox(),
+                  ),
+                ),
+              ),
+              SizedBox(height: 3),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25),
+                child: GestureDetector(
+                  onTap: () {
+                    launchUrl(Uri.parse("https://github.com/Davidbeebest"));
+                  },
                   child: Card(
                     child: ListTile(
                       leading: Icon(Icons.hub, color: Colors.red, size: 30),
@@ -74,6 +78,7 @@ class MyCVPage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
               SizedBox(height: 3),
               Padding(
                 padding: const EdgeInsets.all(8.0),
