@@ -16,31 +16,33 @@ class MyCvPage extends StatelessWidget {
         // TODO:- Provide path for assest image
         foregroundImage: AssetImage("assets/city.jpg"),
       ),
+      SizedBox(height: 10),
       Text("David Onuche", style: kBoldTextstyle),
       Text("Flutter Developer", style: kRegularTextstyle),
-      Container(
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: Colors.blueGrey,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey,
-                offset: Offset(1.0, 5.0),
-                blurRadius: 10,
-              )
-            ]),
-        margin: EdgeInsets.all(8),
-        padding: EdgeInsets.symmetric(vertical: 4, horizontal: 18),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(Icons.call),
-            SizedBox(width: 8),
-            Text("08139175123", style: kRegularTextstyle),
-          ],
+      Padding(
+        padding: EdgeInsets.symmetric(vertical: 4),
+        child: Card(
+          margin: EdgeInsets.symmetric(horizontal: 25),
+          child: ListTile(
+            leading: Icon(Icons.call, color: Colors.blueGrey),
+            title: Center(
+                child: Text("+234 813 917 5123", style: kCardElementTextStyle)),
+            trailing: SizedBox(),
+          ),
         ),
       ),
-      Text("onuchedavid34@gmail.com", style: kRegularTextstyle),
+      Padding(
+        padding: EdgeInsets.symmetric(vertical: 4),
+        child: Card(
+            margin: EdgeInsets.symmetric(horizontal: 25),
+            child: ListTile(
+              leading: Icon(Icons.email, color: Colors.blueGrey, size: 30),
+              title: Center(
+                  child: Text("onuchedavid34@gmail.com",
+                      style: kRegularTextstyle)),
+              trailing: SizedBox(),
+            )),
+      ),
       SizedBox(height: 15),
       Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
