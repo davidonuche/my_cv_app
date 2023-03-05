@@ -9,6 +9,7 @@ class MyCvPage extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: Column(children: [
+      SizedBox(height: 50),
       // Avater Image
       CircleAvatar(
         radius: 90,
@@ -44,39 +45,48 @@ class MyCvPage extends StatelessWidget {
             )),
       ),
       SizedBox(height: 15),
-      Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              // the flex property is used to determine the size of the column
-              // textalign is used to align the text where you want it to be
-              // flex: 4,
-              child: Column(
-                children: [
-                  Text("Education"),
-                  SizedBox(height: 3),
-                  Text("University"),
-                  SizedBox(height: 3),
-                  Text("Any other University"),
-                ],
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                // the flex property is used to determine the size of the column
+                // textalign is used to align the text where you want it to be
+                // flex: 4,
+                child: Column(
+                  children: [
+                    Text(
+                      "Education",
+                      style: kBoldTextstyle,
+                    ),
+                    SizedBox(height: 3),
+                    Text("Oduduwa University", style: kRegularSmallTextstyle),
+                    SizedBox(height: 3),
+                    Text("Any other University", style: kRegularSmallTextstyle),
+                  ],
+                ),
               ),
-            ),
-            Expanded(
-              // the flex property is used to determine the size of the column
-              // textalign is used to align the text where you want it to be
-              // flex: 4,
-              child: Column(
-                children: [
-                  Text("Work Experience"),
-                  SizedBox(height: 3),
-                  Text("English Teacher"),
-                  SizedBox(height: 3),
-                  Text("Flutter Developer")
-                ],
-              ),
-            )
-          ])
+              Expanded(
+                // the flex property is used to determine the size of the column
+                // textalign is used to align the text where you want it to be
+                // flex: 4,
+                child: Column(
+                  children: [
+                    Text(
+                      "Work Experience",
+                      style: kBoldTextstyle,
+                    ),
+                    SizedBox(height: 3),
+                    Text("Flutter Instructor", style: kRegularSmallTextstyle),
+                    SizedBox(height: 3),
+                    Text("Flutter Developer", style: kRegularSmallTextstyle)
+                  ],
+                ),
+              )
+            ]),
+      )
     ])));
   }
 }
